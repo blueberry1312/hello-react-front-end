@@ -3,9 +3,9 @@ import thunk from 'redux-thunk';
 import greetingReducer from './reducers/greetingReducer';
 
 const rootReducer = combineReducers({
-    greeting: greetingReducer,
-  });
+  greeting: greetingReducer,
+});
 
-  const store = createStore(rootReducer, applyMiddleware(thunk));
+const store = createStore(rootReducer, applyMiddleware(thunk));
 
 export default store;
